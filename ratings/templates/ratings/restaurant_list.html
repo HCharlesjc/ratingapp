@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS */
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .restaurant-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .restaurant-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .restaurant-item:hover {
+            background-color: #f9f9f9;
+        }
+        .restaurant-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .restaurant-description {
+            margin-top: 5px;
+            color: #666;
+        }
+        .restaurant-address {
+            margin-top: 5px;
+            color: #888;
+        }
+        .restaurant-rating {
+            margin-top: 5px;
+            font-style: italic;
+            color: #555;
+        }
+        .pagination {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Restaurant List -->
+    <div class="container mt-4">
+        <h1 class="mb-4">Welcome to Ratings</h1>
+        <div class="row">
+            {% for restaurant in restaurants %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ restaurant.image.url }}" alt="{{ restaurant.name }} Image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ restaurant.name }}</h5>
+                        <p class="card-text">{{ restaurant.description }}</p>
+                        <p class="card-text"><strong>Address:</strong> {{ restaurant.address }}</p>
+                        {% if restaurant.avg_rating %}
+                            <p class="card-text">Average Rating: {{ restaurant.avg_rating }}</p>
+                        {% else %}
+                            <p class="card-text">No ratings yet</p>
+                        {% endif %}
+                        <a href="{% url 'restaurant_detail' restaurant.id %}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- Pagination -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html
