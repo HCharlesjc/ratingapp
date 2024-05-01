@@ -4,7 +4,7 @@ from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from django.db.models import Avg
 from .models import Restaurant, Review
-from .forms import ReviewForm  # Assuming you have a ReviewForm defined in forms.py
+from .forms import ReviewForm  
 
 
 def signup_view(request):
@@ -35,7 +35,7 @@ def logout_view(request):
 
 @login_required
 def leave_review(request, restaurant_id):
-    # Logic to handle review submission
+    
     ...
 
 @login_required
