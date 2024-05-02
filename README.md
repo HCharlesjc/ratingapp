@@ -34,14 +34,13 @@ Setup Instructions
     
 
 # Jenkins Pipeline Configuration
-- Overview
 The Jenkins pipeline automates the build and deployment process of the web application using Docker containers.
 
 Pipeline Stages
-Checkout:Checks out the code from the Git repository.
-Build Docker Image: Builds the Docker image for the web application.
-Push Docker Image: Pushes the Docker image to a Docker registry.
-Deploy to Tomcat (Not done): Deploys the application on Tomcat running in Docker containers.
+- Checkout:Checks out the code from the Git repository.
+- Build Docker Image: Builds the Docker image for the web application.
+- Push Docker Image: Pushes the Docker image to a Docker registry.
+- Deploy to Tomcat (Not done): Deploys the application on Tomcat running in Docker containers.
 
 
 # Contributors
