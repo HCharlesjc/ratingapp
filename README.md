@@ -16,19 +16,19 @@ This project aims to develop a simple web application (Ratingapp) using Python a
 
 # Steps to run Locally
 1. Clone the Repository 
-    git clone https://github.com/HCharlesjc/ratingapp.
+   - git clone https://github.com/HCharlesjc/ratingapp.
 
 2. Navigate to project folder
-    cd ratingapp
+   - cd ratingapp
 
 3. Install Python dependencies
-    pip install -r requirements.txt
+   - pip install -r requirements.txt
     
 4. Run Django development server
-    python manage.py runserver
+   - python manage.py runserver
 
 5. Access the Web Application:
-    Open your web browser and go to http://localhost:8000
+   - Open your web browser and go to http://localhost:8000
     
 
 # Jenkins Pipeline Configuration
