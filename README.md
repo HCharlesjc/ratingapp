@@ -3,20 +3,20 @@
 # Overview
 This project aims to develop a simple web application (Ratingapp) using Python and Django and deploy it on Tomcat running in Docker containers using Jenkins pipeline for automated building and deployment.
 
-Features
-Homepage displaying the restaurants.
-Additional page with functionality (e.g., a reviews page).
+# Features
+1. Homepage displaying the restaurants.
+2. Additional page with functionality (e.g., a reviews page).
 
 Setup Instructions
 
 # Prerequisites
-Python 3.12 and Django installed
-Docker installed
-Git installed
-Jenkins installed and configured
+1. Python 3.12 and Django installed
+2. Docker installed
+3. Git installed
+4. Jenkins installed and configured
 
 
-Steps to run Locall
+# Steps to run Locally
 1. Clone the Repository 
     git clone https://github.com/HCharlesjc/ratingapp.
 
@@ -34,7 +34,7 @@ Steps to run Locall
     
 
 # Jenkins Pipeline Configuration
--Overview
+- Overview
 The Jenkins pipeline automates the build and deployment process of the web application using Docker containers.
 
 Pipeline Stages
