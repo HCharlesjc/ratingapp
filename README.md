@@ -7,8 +7,6 @@ This project aims to develop a simple web application (Ratingapp) using Python a
 1. Homepage displaying the restaurants.
 2. Additional page with functionality (e.g., a reviews page).
 
-Setup Instructions
-
 # Prerequisites
 1. Python 3.12 and Django installed
 2. Docker installed
@@ -44,5 +42,5 @@ Pipeline Stages
 
 
 # Contributors
-    Hakeem Charles
-    hakeemc72@gmail.com
+- Hakeem Charles
+- hakeemc72@gmail.com
