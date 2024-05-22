@@ -1,7 +1,7 @@
-# DevOps ShortProject: Restaurant Rating App
+# DevOps ShortProject for Course: Restaurant Rating App
 
 # Overview
-This project aims to develop a simple web application (Ratingapp) using Python and Django and deploy it on Tomcat running in Docker containers using Jenkins pipeline for automated building and deployment.
+This project aims to develop a simple web application (Ratingapp) using Python and Django, running in Docker containers using Jenkins pipeline for automated building and deployment.
 
 # Features
 1. Homepage displaying the restaurants.
